@@ -670,3 +670,10 @@
 /home/vboxuser/Repos/esp32-sniffer/build/esp-idf/main/CMakeFiles/install.dir
 /home/vboxuser/Repos/esp32-sniffer/build/esp-idf/main/CMakeFiles/install/local.dir
 /home/vboxuser/Repos/esp32-sniffer/build/esp-idf/main/CMakeFiles/install/strip.dir
+/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/CMakeFiles/__idf_esp32-UART-manager.dir
+/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/CMakeFiles/edit_cache.dir
+/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/CMakeFiles/rebuild_cache.dir
+/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/CMakeFiles/list_install_components.dir
+/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/CMakeFiles/install.dir
+/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/CMakeFiles/install/local.dir
+/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/CMakeFiles/install/strip.dir

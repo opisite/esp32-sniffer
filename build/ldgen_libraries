@@ -70,3 +70,4 @@
 /home/vboxuser/Repos/esp32-sniffer/build/esp-idf/ulp/libulp.a
 /home/vboxuser/Repos/esp32-sniffer/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /home/vboxuser/Repos/esp32-sniffer/build/esp-idf/main/libmain.a
+/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/libesp32-UART-manager.a

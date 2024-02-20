@@ -122,6 +122,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/ulp/cmake_install.cmake")
   include("/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/wifi_provisioning/cmake_install.cmake")
   include("/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/main/cmake_install.cmake")
+  include("/home/vboxuser/Repos/esp32-sniffer/build/esp-idf/esp32-UART-manager/cmake_install.cmake")
 
 endif()
 

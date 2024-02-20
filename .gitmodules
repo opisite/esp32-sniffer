@@ -1,3 +1,3 @@
-[submodule "main/esp32-UART-manager"]
-	path = main/esp32-UART-manager
+[submodule "components/esp32-UART-manager"]
+	path = components/esp32-UART-manager
 	url = git@github.com:opisite/esp32-UART-manager.git

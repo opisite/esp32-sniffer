@@ -7,6 +7,7 @@
 #include "freertos/task.h"
 #include "wifi_config.h"
 #include "driver/uart.h"
+#include "uart_manager.h"
 
 
 void app_main(void) {
