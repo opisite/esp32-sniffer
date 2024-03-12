@@ -8,8 +8,15 @@
  * @param buffer_len The length of the buffer.
  * @return A pointer to the buffer.
  */
-char* mac_address_to_string(uint8_t* mac, char* buffer, int buffer_len) {
+void mac_address_to_string(uint8_t* mac, char* buffer, int buffer_len) {
     snprintf(buffer, buffer_len, "%02x:%02x:%02x:%02x:%02x:%02x",
              mac[0], mac[1], mac[2], mac[3], mac[4], mac[5]);
-    return buffer;
+}
+
+bool is_broadcast(uint8_t *mac) {
+    for(int x = 0; x < 6; x++) {
+        if(mac[x] != 0xFF)
+            return false;
+    }
+    return true;
 }

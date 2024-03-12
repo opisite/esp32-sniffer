@@ -8,6 +8,7 @@
 #include "wifi_config.h"
 #include "driver/uart.h"
 #include "uart_manager.h"
+#include "esp_log.h"
 
 
 void app_main(void) {
@@ -21,5 +22,9 @@ void app_main(void) {
         ret = nvs_flash_init();
     }
     ESP_ERROR_CHECK(ret);
+
+    uart_manager_init();
+
+    wifi_init_sniffer();
 
 }

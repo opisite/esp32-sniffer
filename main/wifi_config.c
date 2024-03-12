@@ -1,10 +1,11 @@
 #include "wifi_config.h"
+#include "packet_handler.h"
+#include "uart_manager.h"
 
 /**
  * @brief Initializes the Wi-Fi in promiscuous mode.
  */
 void wifi_init_sniffer(void) {
-    // Initialize NVS
     // Initialize TCP/IP stack
     // Initialize Wi-Fi with `esp_wifi_init`
     // Set Wi-Fi in promiscuous mode with `esp_wifi_set_promiscuous`
@@ -21,6 +22,14 @@ void wifi_init_sniffer(void) {
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_NULL));
     ESP_ERROR_CHECK(esp_wifi_set_promiscuous(true));
+    ESP_ERROR_CHECK(esp_wifi_start());
+    ESP_ERROR_CHECK(esp_wifi_set_promiscuous_rx_cb(packet_handler));
 
+    set_wifi_channel(1);
 
+    uart_print("Wifi init finished");
+}
+
+void set_wifi_channel(uint8_t channel) {
+    esp_wifi_set_channel(channel, WIFI_SECOND_CHAN_NONE);
 }
