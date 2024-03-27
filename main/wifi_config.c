@@ -21,13 +21,11 @@ void wifi_init_sniffer(void) {
     wifi_init_config_t cfg = WIFI_INIT_CONFIG_DEFAULT();
     ESP_ERROR_CHECK(esp_wifi_init(&cfg));
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_NULL));
-    ESP_ERROR_CHECK(esp_wifi_set_promiscuous(true));
     ESP_ERROR_CHECK(esp_wifi_start());
+    ESP_ERROR_CHECK(esp_wifi_set_promiscuous(true));
     ESP_ERROR_CHECK(esp_wifi_set_promiscuous_rx_cb(packet_handler));
 
-    set_wifi_channel(1);
-
-    uart_print("Wifi init finished");
+    set_wifi_channel(6);
 }
 
 void set_wifi_channel(uint8_t channel) {
