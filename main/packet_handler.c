@@ -29,7 +29,7 @@ void packet_handler(void *buf, wifi_promiscuous_pkt_type_t type) {
 
 
 
-    if(is_beacon(mac_hdr->addr1)) {
+    if(is_beacon(&mac_hdr->frame_ctrl[0])) {
         beacon_handler(mac_hdr, length);
     }
         
