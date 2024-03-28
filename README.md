@@ -6,5 +6,8 @@ An ESP32 program that sniffs packets.
 
 
 
-https://github.com/opisite/esp32-sniffer/assets/75821261/30058208-1127-4499-8ab7-e7c56f90fb7a
 
+<img src="https://github.com/opisite/esp32-sniffer/assets/75821261/814c42e7-914f-48d6-a5bf-14d0b2ceed1a" alt="sniffer_image" width="300"/>
+
+
+![sniffer_output](https://github.com/opisite/esp32-sniffer/assets/75821261/0ad9790a-1235-45aa-925c-0e367b120116)
