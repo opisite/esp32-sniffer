@@ -6,13 +6,6 @@
  * @brief Initializes the Wi-Fi in promiscuous mode.
  */
 void wifi_init_sniffer(void) {
-    // Initialize TCP/IP stack
-    // Initialize Wi-Fi with `esp_wifi_init`
-    // Set Wi-Fi in promiscuous mode with `esp_wifi_set_promiscuous`
-    // Set the promiscuous filter to only listen to specific packet types if necessary
-    // Start Wi-Fi with `esp_wifi_start`
-    // Register the packet handler callback with `esp_wifi_set_promiscuous_rx_cb`
-
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
 

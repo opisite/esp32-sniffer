@@ -66,6 +66,6 @@ typedef struct {
 void packet_handler(void *buf, wifi_promiscuous_pkt_type_t type);
 void llc_snap_handler(void *hdr);
 void ethernet2_handler(void *hdr);
-void beacon_handler(void *hdr, int buf_len);
+void beacon_handler(void *pkt, int pkt_len);
 
 #endif // PACKET_HANDLER_H

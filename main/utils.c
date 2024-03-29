@@ -27,6 +27,10 @@ char* ipv4_address_to_string(uint8_t* ip) {
     return str;
 }
 
+/**
+ * @brief Determines whether a packet is being broadcast.
+ * @param ip The destination MAC address.
+ */
 bool is_broadcast(uint8_t *mac) {
     for(int x = 0; x < 6; x++) {
         if(mac[x] != 0xFF)
@@ -35,11 +39,12 @@ bool is_broadcast(uint8_t *mac) {
     return true;
 }
 
+/**
+ * @brief Determines whether a packet is a beacon frame.
+ * @param fc The first octet of the frame control field in the MAC header.
+ */
 bool is_beacon(uint8_t *fc) {
-    if((*fc & 0xFC) == 0x80) {
-        return true;
-    }
-    return false;
+    return (*fc & 0xFC) == 0x80;
 }
 
 void print_byte(void *byte) {
