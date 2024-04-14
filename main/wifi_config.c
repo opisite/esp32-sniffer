@@ -22,5 +22,6 @@ void wifi_init_sniffer(void) {
 }
 
 void set_wifi_channel(uint8_t channel) {
+    log_str("Setting WIFI Channel to Channel %d", channel);
     esp_wifi_set_channel(channel, WIFI_SECOND_CHAN_NONE);
 }
